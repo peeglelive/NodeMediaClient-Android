@@ -115,7 +115,7 @@ public class NodePublisher implements NodeCameraView.NodeCameraViewCallback {
                 }
             };
             AudioManager am = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
-            am.requestAudioFocus(sAudioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+            am.requestAudioFocus(sAudioFocusChangeListener, AudioManager.STREAM_VOICE_CALL, AudioManager.AUDIOFOCUS_GAIN);
 
         }
         publishers.add(this);
